@@ -13,7 +13,7 @@ const app = express();
 app.use(cors())
 dotenv.config();
 app.use(express.json())
-mongoose.connect("mongodb://127.0.0.1:27017/express-my")
+mongoose.connect("mongodb+srv://abubakar59132:A.a59132@ecommerce.hoosqpd.mongodb.net/")
     .then(() => console.log("DataBAse Connected"))
     .catch((error) => console.log(error));
 
