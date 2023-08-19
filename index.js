@@ -6,6 +6,7 @@ import authRouter from "./Routes/AuthenticateRoute.js";
 import productRoute from "./Routes/ProductRoute.js"
 import cartRoute from "./Routes/CartRoute.js"
 import orderRoute from "./Routes/OrderRoute.js"
+import paymentRoute from "./Routes/stripeRoute.js"
 // import paymentRoute from "./Routes/stripeRoute.js"
 import cors from "cors"
 
@@ -22,6 +23,7 @@ app.use("/api/user", router)
 app.use("/api/produt", productRoute)
 app.use("/api/cart", cartRoute)
 app.use("/api/order", orderRoute)
+app.use("/api/payment", paymentRoute)
 // app.use("/api/checkout", paymentRoute)
 
 app.listen(process.env.PORT || 5000, () => {
