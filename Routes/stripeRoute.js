@@ -26,8 +26,8 @@ router.post("/",async(req,res)=>{
         payment_method_types:["card"],
         line_items: lineItems, 
         mode:"payment",
-        success_url:"http://localhost:3000/success",
-        cancel_url:"http://localhost:3000/fail",
+        success_url:"https://64fc35202ec0d93f06cd037d--dainty-stroopwafel-bcf7c9.netlify.app/success",
+        cancel_url:"https://64fc35202ec0d93f06cd037d--dainty-stroopwafel-bcf7c9.netlify.app/fail",
     });
 
     res.json({id:session.id})
