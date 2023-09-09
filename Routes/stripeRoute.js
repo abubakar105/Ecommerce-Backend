@@ -6,14 +6,14 @@ router.use(express.json());
 router.post("/",async(req,res)=>{
     try {
         const {products} = req.body;
-    console.log("first",products)
+    // console.log("first",products)
 
     const totalItems = products.reduce((total, item) => total + item.quantity, 0);
     const totalPrice = products.reduce((total, item) => total + item.price * item.quantity, 0);
     
     const lineItems = products.map((product)=>({
         price_data: { 
-            currency: "inr", 
+            currency: "usd", 
             product_data: { 
               name: product.title, 
             }, 

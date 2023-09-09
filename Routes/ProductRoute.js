@@ -65,7 +65,7 @@ router.delete("/:adminId/:productId",  async (req, res) => {
 //GET PRODUCT
 router.get("/find/:id", async (req, res) => {
     try {
-        console.log("first")
+        // console.log("first")
         const product = await Product.findById(req.params.id);
         res.status(200).json(product);
     } catch (err) {
@@ -173,9 +173,9 @@ router.get("/", async (req, res) => {
   });
 
   router.get("/admin/:id", async (req, res) => {
-    console.log("first")
+    // console.log("first")
     try {
-      console.log(req.params.id)
+      // console.log(req.params.id)
       const admin=req.query.id;
       const products = await Product.find({ adminId: req.params.id });
       // const products = await Product.aggregate([
