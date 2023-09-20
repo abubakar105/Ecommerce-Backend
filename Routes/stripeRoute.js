@@ -26,8 +26,8 @@ router.post("/",async(req,res)=>{
         payment_method_types:["card"],
         line_items: lineItems, 
         mode:"payment",
-        success_url:"https://650a92405bf89914e3ce32b3--mellifluous-dragon-496ff7.netlify.app/success",
-        cancel_url:"https://650a92405bf89914e3ce32b3--mellifluous-dragon-496ff7.netlify.app/fail",
+        success_url:"https://ecommerece-app.netlify.app/success",
+        cancel_url:"https://ecommerece-app.netlify.app/fail",
     });
 
     res.json({id:session.id})
