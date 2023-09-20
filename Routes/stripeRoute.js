@@ -26,8 +26,8 @@ router.post("/",async(req,res)=>{
         payment_method_types:["card"],
         line_items: lineItems, 
         mode:"payment",
-        success_url:"https://64fc35202ec0d93f06cd037d--dainty-stroopwafel-bcf7c9.netlify.app/success",
-        cancel_url:"https://64fc35202ec0d93f06cd037d--dainty-stroopwafel-bcf7c9.netlify.app/fail",
+        success_url:"https://650a92405bf89914e3ce32b3--mellifluous-dragon-496ff7.netlify.app/success",
+        cancel_url:"https://650a92405bf89914e3ce32b3--mellifluous-dragon-496ff7.netlify.app/fail",
     });
 
     res.json({id:session.id})
